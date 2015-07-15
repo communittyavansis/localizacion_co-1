@@ -19,23 +19,20 @@
 #
 ##############################################################################
 {
-    "name": "Colombian NIT validate location  by I.A.S. INGENIERÍA, APLICACIONES Y SOFTWARE",
+    "name": "Colombia Localization Chart Account  by I.A.S. INGENIERÍA, APLICACIONES Y SOFTWARE",
     "version": "1.0",
     "description": """
-    VALIDACIÓN DE AUTENTICIDAD DEL NIT O RUT (LOCALIZACION COLOMBIANA)
-    Collaborators:
-   - Johan Alejandro Olano <jolano@ias.com.co>
-
+Colombian accounting chart and tax localization.
     """,
     "author": "I.A.S. Ingenieria, Aplicaciones y Software",
     "website": "http://www.ias.com.co",
-    "category": "Localization",
+    "category": "Tools",
     "depends": [
             "base",
 		    "base_vat",
 			],
 	"data":[
-		    "views/res_partner_view.xml",
+		    "res_partner_view.xml",
 			],
     "demo_xml": [
 			],
