@@ -20,7 +20,7 @@
                       <field name="nomenclature_text_3" string=" " style="width:25%%" on_change="onchange_nomenclature(nomenclature, nomenclature_text, nomenclature_1, nomenclature_text_1, nomenclature_2, nomenclature_text_2,nomenclature_3,nomenclature_text_3)" />
                     </h5>
                     </div>
-                      
+                      <field name="street3" class="oe_read_only"  />
 
                   </field>
 
@@ -32,7 +32,7 @@
               <field name='inherit_id' ref='base.view_partner_form'/>
               <field name='arch' type='xml'>
                   <field name="street"  position="attributes">
-                     <attribute name="class">oe_read_only</attribute>
+                     <attribute name="attrs">{'invisible':1}</attribute>
 
                   </field>
 

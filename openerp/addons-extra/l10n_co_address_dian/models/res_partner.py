@@ -24,7 +24,7 @@ class res_partner(osv.osv):
 
     def onchange_nomenclature(self, cr, uid, ids, nomenclature, nomenclature_text, nomenclature_1, nomenclature_text_1, nomenclature_2, nomenclature_text_2,nomenclature_3,nomenclature_text_3, context=None):
         res = {'value':{}}
-        res['value']['street'] = (nomenclature and (nomenclature+' ') or '') + (nomenclature_text and (nomenclature_text+' ') or '') + (nomenclature_1 and (nomenclature_1+' ') or '') + (nomenclature_text_1 and (nomenclature_text_1+' ') or '')  + (nomenclature_2 and (nomenclature_2+' ') or '') + (nomenclature_text_2 and (nomenclature_text_2+' ') or '') + (nomenclature_3 and (nomenclature_3+' ') or '') + (nomenclature_text_3 and (nomenclature_text_3+' ') or '')
+        res['value']['street3'] = (nomenclature and (nomenclature+' ') or '') + (nomenclature_text and (nomenclature_text+' ') or '') + (nomenclature_1 and (nomenclature_1+' ') or '') + (nomenclature_text_1 and (nomenclature_text_1+' ') or '')  + (nomenclature_2 and (nomenclature_2+' ') or '') + (nomenclature_text_2 and (nomenclature_text_2+' ') or '') + (nomenclature_3 and (nomenclature_3+' ') or '') + (nomenclature_text_3 and (nomenclature_text_3+' ') or '')
         return res
 
     _columns = {
@@ -53,7 +53,7 @@ class res_partner(osv.osv):
         ('BL','BL'),('P','P'),('CA','CA'),('CC','CC'),('LC','LC')
         ],size=22),
         'nomenclature_text_3': fields.char(size=22),
-        
+        'street3':fields.char(),
 
 
 

@@ -18,28 +18,4 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    "name": "DANE",
-    "version": "1.0",
-    "description": """
-Colombian accounting chart and tax localization.
-    """,
-    "author": "I.A.S. Ingenieria, Aplicaciones y Software",
-    "website": "http://www.ias.com.co",
-    "category": "Tools",
-    "depends": [
-            "base",
-		    "base_vat",
-			],
-	"data":[
-		    "res_partner_view.xml",
-			],
-    "demo_xml": [
-			],
-    "update_xml": [
-			],
-    "active": False,
-    "installable": True,
-    "certificate" : "",
-}
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+import res_partner
